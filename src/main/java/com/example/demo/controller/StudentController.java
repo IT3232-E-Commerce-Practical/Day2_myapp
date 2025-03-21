@@ -7,5 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/student")
 public class StudentController {
-@GetMapping("")
+@GetMapping("/name")
+	public String myMessage (){
+	return "MY name is Piuymal";
+
+}
 }
