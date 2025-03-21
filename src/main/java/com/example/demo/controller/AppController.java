@@ -1,15 +1,21 @@
 package com.example.demo.controller;
 
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("/app") 
 public class AppController{
 	@GetMapping("/msg")
 	public String myMessage() {
-		return "Hello Springboot";
+		return "Hello SpringBoot";
+	}
+	
+	@GetMapping("/name")
+	public String myName() {
+		return "My name is SpringBoot";
 	}
 }
 
